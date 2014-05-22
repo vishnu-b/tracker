@@ -5,7 +5,9 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	{{ HTML::script('js/include_map.js') }}
 	@include('includes.head')
-	@yield('title')
+	@section('title')
+		<title>Technowell Traffic</title>
+	@show
 </head>
 <body>
 	<div class="container-fluid">
