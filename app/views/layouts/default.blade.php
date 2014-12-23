@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	
+
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	{{ HTML::script('js/include_map.js') }}
 	@include('includes.head')
@@ -17,9 +17,9 @@
 		<div id="main">
 			@yield('content')
 		</div>
-		<!-- <footer class="row">
+		<footer class="row">
 			@include('includes.footer')
-		</footer> -->
-	</div>	
+		</footer>
+	</div>
 </body>
 </html>

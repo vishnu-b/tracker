@@ -5,7 +5,9 @@
 
 {{ HTML::style('css/bootstrap.css') }}
 {{ HTML::style('css/font-awesome.min.css') }}
+{{ HTML::style('css/bootstrap-datetimepicker.min.css') }}
 {{ HTML::style('css/main.css') }}
 
 {{ HTML::script('js/jquery-2.1.1.js') }}
 {{ HTML::script('js/bootstrap.js') }}
+

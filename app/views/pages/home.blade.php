@@ -15,11 +15,36 @@
 		    </div>
 		    <div id="collapseOne" class="panel-collapse collapse in filter">
 		      <div class="panel-body">
-		        Form goes here
+		        <form role="form">
+		          <div class="form-group">
+		            <input type="text" class="form-control" id="user-id" placeholder="User Id">
+		          </div>
+		          <div class="form-group">
+		          	<!-- <label for="from-date">From Date</label> -->
+		            <div class='input-group date' id='datetimepicker1'>
+	                    <input type='text' class="form-control" name="from-date" id="from-date"placeholder="From Date" data-date-format="DD/MM/YYYY hh:mm A"/>
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div>
+		          </div>
+		          <div class="form-group">
+		          	<!-- <label for="to-date">To Date</label> -->
+		            <div class='input-group date' id='datetimepicker2'>
+	                    <input type='text' class="form-control" name="to-date" id="to-date" placeholder="To Date" data-date-format="DD/MM/YYYY hh:mm A"/>
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div>
+		          </div>
+		          <div class="pull-right">
+		          	<button type="button" class="btn btn-default" onclick="clearmap()">Clear</button>
+		          	<button type="button" class="btn btn-default" onclick="setFilterParams()">Filter</button>
+		          </div>
+
+		        </form>
 		      </div>
 		    </div>
 	  	</div>
-  
+
 
     </div>
 @stop
