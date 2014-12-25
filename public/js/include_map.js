@@ -90,7 +90,7 @@ function placeMarker(latlng) {
  * Generates the url based on the filter parameters
  */
 function setUrl () {
-  return '/track' + params;
+  return '/tracker/track' + params;
 }
 
 

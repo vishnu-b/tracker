@@ -9,6 +9,13 @@ class TrackerController extends \BaseController {
      */
     public function index()
     {
+        $users = User::select('user_id')->get();
+        // $user = $users->collapse();
+        print_r($users);
+        return;
+        foreach ($users as $key => $value) {
+            # code...
+        };
         $tracker = Tracker::orderBy('Id', 'desc')->first();
         return $tracker;
     }
