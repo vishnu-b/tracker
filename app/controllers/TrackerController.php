@@ -32,7 +32,23 @@ class TrackerController extends \BaseController {
      */
     public function store()
     {
-        //
+        $user_id = Request::get('user_id');
+        $latitude = Request::get('latitude');
+        $longitude = Request::get('longitude');
+
+        $trackdata = new Tracker;
+        $trackdata->user_id = $user_id;
+        $trackdata->latitude = $latitude;
+        $trackdata->longitude = $longitude;
+        $trackdata->save();
+
+        return Response::json([
+            'success' => [
+                'message' => 'Data added.',
+                'status_code' => 203
+            ]
+        ], 203);
+
     }
 
 
@@ -82,6 +98,7 @@ class TrackerController extends \BaseController {
     {
         //
     }
+
 
 
 }
