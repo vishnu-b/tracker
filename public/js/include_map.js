@@ -37,11 +37,10 @@ function track(){
   clearMap();
 
   var url = setUrl();
-  console.log(url);
 
   downloadUrl(url, function(data){
-    var latlng = new google.maps.LatLng(data.lat,data.lng);
-
+    var latlng = new google.maps.LatLng(data.lat, data.lng);
+    console.log(data);
     placeMarker(latlng);
 
   });

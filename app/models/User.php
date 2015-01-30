@@ -12,6 +12,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $table = 'users';
 
+	public $primaryKey = 'userId';
 
 	public static $rules = [
 		'user_id' => 'required|unique:users|min:10|max:10'

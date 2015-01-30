@@ -9,9 +9,9 @@ class TrackerController extends \BaseController {
      */
     public function index()
     {
-        $users = User::select('user_id')->get();
+        $users = User::select('userId')->get();
         // $user = $users->collapse();
-        print_r($users);
+        return $users;
         return;
         foreach ($users as $key => $value) {
             # code...
